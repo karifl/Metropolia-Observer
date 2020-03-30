@@ -27,5 +27,8 @@ public class DigitalClock implements Observer {
 		
 		System.out.println(hour +" : "+minute + " : " +second);
 	}
+	
+	public void run(){
+		timer.run();
 
 }
