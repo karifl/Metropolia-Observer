@@ -7,7 +7,7 @@ public class Main {
 		ClockTimer cuckoo = new ClockTimer();
 		
 		DigitalClock digiCuckoo = new DigitalClock(cuckoo);
-		cuckoo.run();
+		digiCuckoo.run();
 		
 
 	}
