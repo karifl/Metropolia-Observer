@@ -30,5 +30,6 @@ public class DigitalClock implements Observer {
 	
 	public void run(){
 		timer.run();
+	}
 
 }
