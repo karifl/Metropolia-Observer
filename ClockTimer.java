@@ -4,7 +4,7 @@ public class ClockTimer extends Subject {
 	
 	private int secondLimit = 59;
 	private int minuteLimit = 59;
-	private int hourLimit = 24;
+	private int hourLimit = 23;
 	private int hour=0;
 	private int minute=0;
 	private int second=0;
@@ -26,10 +26,11 @@ public class ClockTimer extends Subject {
 		if(second >= secondLimit) {
 			second = 0;
 			if(minute >= minuteLimit ) {
-				hour++;
 				minute = 0;
 				if(hour >= hourLimit) {
 					hour=0;
+				}else {
+				hour++;
 				}
 				
 			} else {
